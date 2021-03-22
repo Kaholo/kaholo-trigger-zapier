@@ -1,0 +1,23 @@
+{
+  "name": "Zapier-Trigger",
+  "type": "trigger",
+  "execProgram": "node",
+  "main": "app.js",
+  "imgUrl": "logo.png",
+  "version": "1.0.0",
+  "description": "Handles Zapier webhooks",
+  "methods": [
+    {
+      "name": "webhookPost",
+      "route": "post /webhook/zapier",
+      "viewName": "Post Request",
+      "params": [
+        {
+          "name": "keyPat",
+          "viewName": "Kaholo Key Pattern",
+          "type": "string"
+        }
+      ]
+    }
+  ]
+}
